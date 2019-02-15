@@ -14,6 +14,7 @@
 		4906E6152214FFB2000E00DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4906E6132214FFB2000E00DD /* LaunchScreen.storyboard */; };
 		4906E6202214FFB3000E00DD /* CollectionItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906E61F2214FFB3000E00DD /* CollectionItemTests.swift */; };
 		4906E62B2214FFB3000E00DD /* CollectionItemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4906E62A2214FFB3000E00DD /* CollectionItemUITests.swift */; };
+		49D0A35A221746AC00AAA2B3 /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A359221746AC00AAA2B3 /* imageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4906E6262214FFB3000E00DD /* CollectionItemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionItemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4906E62A2214FFB3000E00DD /* CollectionItemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemUITests.swift; sourceTree = "<group>"; };
 		4906E62C2214FFB3000E00DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D0A359221746AC00AAA2B3 /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4906E6112214FFB2000E00DD /* Assets.xcassets */,
 				4906E6132214FFB2000E00DD /* LaunchScreen.storyboard */,
 				4906E6162214FFB2000E00DD /* Info.plist */,
+				49D0A359221746AC00AAA2B3 /* imageCollectionViewCell.swift */,
 			);
 			path = CollectionItem;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				4906E60D2214FFB1000E00DD /* ViewController.swift in Sources */,
 				4906E60B2214FFB1000E00DD /* AppDelegate.swift in Sources */,
+				49D0A35A221746AC00AAA2B3 /* imageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
