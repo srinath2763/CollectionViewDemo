@@ -14,11 +14,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     @IBOutlet var mainImage: UIImageView!
     
-    let totalCell: Int = 1000000
+    var totalCell: Int = 10
     
     @IBOutlet weak var collectionOutlet: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("Invoked")
         return totalCell
     }
     
@@ -30,6 +31,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         mainImage.image = UIImage(named: imageArr[indexPath.item % imageArr.count])
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == totalCell - 1 {
+            let insertIndexPath = IndexPath(item: totalCell, section: 0)
+            totalCell += 1
+            collectionView.insertItems(at: [insertIndexPath])
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
