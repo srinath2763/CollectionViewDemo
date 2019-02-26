@@ -69,7 +69,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionOutlet" destination="KWG-CU-iw1" id="e0R-KS-OEK"/>
-                        <outlet property="mainImage" destination="Zzr-oG-oMV" id="Jin-mG-Slh"/>
+                        <outlet property="toDisplay" destination="Zzr-oG-oMV" id="Jin-mG-Slh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
